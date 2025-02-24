@@ -1,66 +1,20 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
-    font-family: monospace;  
+    font-family: sans-serif;
+   
 }
 .logo img{
     max-width: 200px;
     cursor: pointer;
-    position: fixed;
-}
-/* .navbar{
-    width: 1500px;
-    height: 100px;
-    margin: auto;
-    border-radius: 10px;
-} */
-/* .navbar ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 20;
-    position: relative;
-} */
-/* .navbar ul li a{
-    text-decoration: none;
-    color: rgb(2, 5, 8);
-    text-transform: uppercase;
-    
-} */
-/* .navbar ul li ::after{
-    content: '';
-    height: 3px;
-    width: 0;
-    background-color: aquamarine;
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    transform: scale(); */
-
-/* .navbar ul li a:hover{
-    color: rgb(17, 136, 96);
+    position:absolute;
+    margin-left: 300px;
+    margin-top: -20px;
 }
 
 
-/* .navbar ul li:hover .dropdown{
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    background-color: rgb(162, 170, 177);
-} */
-/* 
-.dropdownn ul li{
-    width: 150px;
-    padding: 10px;
-}
-.ri-arrow-down-s-fill{
-       float:center;
-       margin-left: 10px;
-       padding-top:3px;
-
-
-} */
  .navbar{
     background-color: white;
     text-align: center;
@@ -72,15 +26,16 @@
    
     justify-content: center;
 }
-/* li{
-    margin-top: 2rem;
-} */
+li{
+    margin-top: 20px;
+}
 
 li a{
     text-decoration: none;
     font-size: 18px;
     color: rgb(1, 19, 19);
     transition: all 0.5s ease 0s;
+    font-weight: bold;
 }
 
 li a:hover{
@@ -94,25 +49,32 @@ li a:hover{
 }
 .dropdown{
     display: none;
+    
+
 }
 .navbar ul li:hover .dropdown{
     display: block;
     position: absolute;
-    background: rgb(162, 167, 162);
+    background: rgb(223, 226, 223);
     margin-top: 10px;
     margin-left: -10px;
+    z-index: 1;
+    
 }
 .navbar ul li:hover .dropdown ul{
     display: block;
     margin: 1px;
+    border-top: 3px solid rgb(7, 153, 141);
+
 }
 .navbar ul li:hover .dropdown ul li{
     width: 150px;
     padding: 10px;
-    
+   
     background: transparent;
     border-radius: 0;
     text-align: left;
+    
 }
 .ri-arrow-down-s-fill{
     float: right;
@@ -123,7 +85,244 @@ li a:hover{
 .hover_me:hover .dropdown_login{
     display: block;
     position: absolute;
-    background: rgb(212, 221, 212);
+    background: rgb(235, 236, 235);
     margin-top: -40px;
     margin-left: 140px;
+    
+}
+.header-right {
+    max-width: 200px;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 1500px;
+    margin-top: -18px;
+    display: flex;
+}
+.header-right i{
+     color: white;
+    font-size: 40px;
+    padding: 10px 10px;
+    background-color: rgb(7, 153, 141);
+    border-radius: 50%;
+    border: .5px solid rgb(133, 128, 128);
+    transition: all 0.5s ease 0s;
+
+}
+.header-right i:hover{
+    background:white ;
+    color: black;
+}
+.header-right a:hover{
+    background:white ;
+    color: black;
+}
+.header-right a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    transition: all 0.5s ease 0s;
+    font-weight: bold;
+    padding: 20px 20px;
+    border-radius: 30px 30px;
+    background-color: rgb(7, 153, 141);
+    position:absolute;
+    margin-left:9px ;
+    margin-top: -4px;
+    width: 120px;
+    border: .5px solid rgb(133, 128, 128);
+    transition: all 0.5s ease 0s;
+}
+.main{
+    margin-left: 300px;
+    margin-top:180px ;
+
+   
+}
+.colorful-p{
+    margin-top: 180px;
+    color:rgb(7, 153, 141) ;
+    font-size: 2rem;
+     
+}
+h1{
+    font-size: 4rem;
+    position: relative;
+    margin-right: 67rem;
+}
+p{
+    color:rgb(137, 143, 137) ;
+    font-size: 1em;
+    margin-right: 70rem;
+    
+    
+}
+.child-img img{
+    margin-left: 550px;
+    margin-top:-22rem;
+    position:absolute;
+    width: 650px;
+    height: 450px;
+    border-radius: 50px;
+    transition: all 0.5s ease 0s;
+}
+.child-img img:hover{
+    transform: scale(1.05);
+}
+.section-numbers{
+    margin-left: 78rem;
+    margin-top:-23rem ;
+    
+
+}
+
+.section-numbers h2{
+    font-size: 4rem;
+    
+}
+.section-2{
+    margin-top: 3rem ;
+}
+.section-3{
+    margin-top: 4rem ;
+}
+
+.green-button{
+    padding: 20px 50px;
+    border-radius: 30px 30px;
+    background-color: rgb(7, 153, 141);
+    margin-top: -50px;
+    color: aliceblue;
+    border: .5px solid rgb(133, 128, 128);
+    transition: all 0.5s ease 0s;
+}
+.green-button:hover{
+    background:white ;
+    color: black;
+}
+.black-button:hover{
+    background:white ;
+    color: black;
+}
+.black-button{
+    padding: 20px 50px;
+    border-radius: 30px 30px;
+    background-color: rgb(0, 5, 5);
+    margin-top: -50px;
+    color: aliceblue;
+    border: .5px solid rgb(133, 128, 128);
+    transition: all 0.5s ease 0s;
+}
+.section-table-1{
+    
+    margin-right: 80rem;
+    margin-top: 80px;
+    text-align: left;
+    padding: 30px;
+    position: absolute;
+    border: .5px transparent rgb(133, 128, 128);
+    transition: all 0.5s ease 0s;
+    box-shadow: .2em .2em .2em .2em;
+}
+.section-table-1:hover {
+    background:rgb(7, 153, 141);
+    color: rgb(8, 8, 8);
+}
+.section-table-2:hover {
+    background:rgb(7, 153, 141);
+    color: rgb(8, 8, 8);
+}
+.section-table-3:hover {
+    background:rgb(7, 153, 141);
+    color: rgb(8, 8, 8);
+}
+.section-table-4:hover {
+    background:rgb(7, 153, 141);
+    color: rgb(8, 8, 8);
+}
+
+.icon{
+    color: white;
+    font-size: 40px;
+    padding: 10px 10px;
+    background-color: rgb(7, 153, 141);
+    border-radius: 50%;
+    border: .5px solid rgb(133, 128, 128);
+    transition: all 0.5s ease 0s;
+
+
+}
+.icon:hover{
+    background:white;
+    color: rgb(8, 8, 8);
+}
+.section-table-1 p{
+    text-align: center;
+    margin: 1rem;
+}
+.section-table-1 h3{
+    text-align: left;
+    margin: 1rem;
+}
+
+.section-table-2{
+    border: .5px transparent rgb(133, 128, 128);
+    margin-right: 58rem;
+    margin-left: 23rem;
+    margin-top: 80px;
+    text-align: left;
+    padding: 30px;
+    position: absolute;
+    transition: all 0.5s ease 0s;
+    box-shadow: .2em .2em .2em .2em;
+}
+
+.section-table-2 p{
+    text-align: center;
+    margin: 1rem;
+}
+.section-table-2 h3{
+    text-align: left;
+    margin: 1rem;
+}
+
+.section-table-3{
+     border: .5px transparent rgb(133, 128, 128);
+    margin-right: 35rem;
+    margin-top: 80px;
+    margin-left: 45rem;
+    text-align: left;
+    padding: 30px;
+    position: absolute;
+    transition: all 0.5s ease 0s;
+    box-shadow: .2em .2em .2em .2em;
+}
+
+.section-table-3 p{
+    text-align: center;
+    margin: 1rem;
+}
+.section-table-3 h3{
+    text-align: left;
+    margin: 1rem;
+}
+.section-table-4{
+     border: .5px transparent rgb(189, 183, 183);
+     margin-right: 12rem;
+    margin-top: 80px;
+    margin-left: 68rem;
+    text-align: left;
+    padding: 30px;
+    position: absolute;
+    transition: all 0.5s ease 0s;
+   box-shadow: .2em .2em .2em .2em;
+    
+}
+
+.section-table-4 p{
+    text-align: center;
+    margin: 1rem;
+}
+.section-table-4 h3{
+    text-align: left;
+    margin: 1rem;
 }
