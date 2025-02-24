@@ -72,9 +72,9 @@
    
     justify-content: center;
 }
-li{
+/* li{
     margin-top: 2rem;
-}
+} */
 
 li a{
     text-decoration: none;
@@ -94,4 +94,36 @@ li a:hover{
 }
 .dropdown{
     display: none;
+}
+.navbar ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    background: rgb(162, 167, 162);
+    margin-top: 10px;
+    margin-left: -10px;
+}
+.navbar ul li:hover .dropdown ul{
+    display: block;
+    margin: 1px;
+}
+.navbar ul li:hover .dropdown ul li{
+    width: 150px;
+    padding: 10px;
+    
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.ri-arrow-down-s-fill{
+    float: right;
+}
+.dropdown_login{
+    display: none;
+}
+.hover_me:hover .dropdown_login{
+    display: block;
+    position: absolute;
+    background: rgb(212, 221, 212);
+    margin-top: -40px;
+    margin-left: 140px;
 }
