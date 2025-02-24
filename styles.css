@@ -5,31 +5,28 @@
     font-family: monospace;  
 }
 .logo img{
-    max-width: 250px;
+    max-width: 200px;
     cursor: pointer;
+    position: fixed;
 }
-.navbar{
-    width: 85%;
+/* .navbar{
+    width: 1500px;
+    height: 100px;
     margin: auto;
-    padding:35px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    position: relative;
-}
-.navbar ul li {
+    border-radius: 10px;
+} */
+/* .navbar ul li {
     list-style: none;
     display: inline-block;
     margin: 0 20;
     position: relative;
-}
-.navbar ul li a{
+} */
+/* .navbar ul li a{
     text-decoration: none;
     color: rgb(2, 5, 8);
     text-transform: uppercase;
     
-}
+} */
 /* .navbar ul li ::after{
     content: '';
     height: 3px;
@@ -40,24 +37,19 @@
     bottom: -10px;
     transform: scale(); */
 
-.navbar ul li a:hover{
+/* .navbar ul li a:hover{
     color: rgb(17, 136, 96);
 }
-.dropdown{
-    display: block;
-}
 
-.navbar ul li:hover .dropdown{
+
+/* .navbar ul li:hover .dropdown{
     display: block;
     position: absolute;
     left: 0;
     top: 100%;
     background-color: rgb(162, 170, 177);
-}
-.dropdownn ul{
-    display: block;
-    margin: 10px;
-}
+} */
+/* 
 .dropdownn ul li{
     width: 150px;
     padding: 10px;
@@ -68,4 +60,38 @@
        padding-top:3px;
 
 
+} */
+ .navbar{
+    background-color: white;
+    text-align: center;
+    
+ }
+.navbar ul{
+    display: flex;
+    list-style: none;
+   
+    justify-content: center;
+}
+li{
+    margin-top: 2rem;
+}
+
+li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(1, 19, 19);
+    transition: all 0.5s ease 0s;
+}
+
+li a:hover{
+    color:rgb(43, 90, 68);
+    font-size: 20px;
+}
+.navbar ul li{
+    width:120px;
+    text-align: center;
+    padding:15px;
+}
+.dropdown{
+    display: none;
 }
